@@ -4,11 +4,10 @@ const SubCategory = require("./subcat.js")
 
 const ProductSchema = mongoose.Schema({
     name: String,
-    brand: {type: mongoose.Types.ObjectId, ref: Brand},
     price: Number,
     img: String,
     unit: String,
-    subcategory: {type: mongoose.Types.ObjectId, ref: SubCategory}
+    barcode: String
 })
 
-module.exports = mongoose.model("Product", ProductSchema)
+module.exports = mongoose.model("ShopProduct", ProductSchema)

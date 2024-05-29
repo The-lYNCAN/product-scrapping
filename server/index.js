@@ -11,7 +11,7 @@ const GoogleImages = require("google-images")
 const client = new GoogleImages(SearchEngineID, googleCustomSearchKey)
 
 const corsOptions = {
-    origin: ["http://localhost:3000", '*'],
+    origin: ["http://localhost:3000", '*', "http://192.168.1.17:3000"],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     optionsSuccessStatus: 204,
